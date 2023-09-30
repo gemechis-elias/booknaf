@@ -1,16 +1,57 @@
-# booknaf_app
+# BookNaf App
 
-A new Flutter project.
+BookNaf is a mobile application designed to revolutionize your reading experience. It offers a wide range of features to enhance your reading journey, from discovering new books to engaging with authors and fellow readers.
 
-## Getting Started
+## Features
 
-This project is a starting point for a Flutter application.
+- **Login and Registration:**
+  - Login using phone number or email
+  - Registration via email or phone number
+  - Forgot password functionality
 
-A few resources to get you started if this is your first Flutter project:
+- **Home Page:**
+  - Quick search for books, authors, or genres
+  - Daily inspirational quotes
+  - Personalized book recommendations
+  - Categorized library for easy exploration
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- **Post and Community:**
+  - Explore posts from verified authors and community members
+  - Follow favorite authors for updates
+  - Interactive discussions with threaded comments
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- **Author Profiles:**
+  - View author details, books, and posts
+  - Direct messaging option for reader-author interaction
+
+- **Reading Experience:**
+  - Multilingual support
+  - Customizable book reader settings
+  - Highlighting, annotations, and word lookup features
+
+- **Notes and Organization:**
+  - Save notes from books or posts
+  - Organize notes with tags and labels
+  - Attach files, images, and links to notes
+
+- **Notification System:**
+  - Post notifications for new content from followed authors
+  - Reading progress reminders and suggestions
+
+## Contributors
+
+- **Developer:** [Gemechis Elias](https://github.com/gemechis-elias)
+- **UI/UX Designer:** Getabalew Asfaw
+
+
+## Contributing
+
+Only Authorized Developers in Booknaf Company can read and edit part of this code. 
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
+---
+
+Feel free to explore the app, report issues, and contribute to make BookNaf even better! Happy reading!
