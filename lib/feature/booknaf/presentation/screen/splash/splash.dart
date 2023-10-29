@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
+import '../../../../user/presentation/screen/auth/login.dart';
 import '../home_bottom_nav.dart';
 import '../onboarding.dart';
 
@@ -35,7 +36,7 @@ class _SplashState extends State<Splash> {
           // If first visit, navigate to OnBoardingScreen()
           Navigator.pushReplacement(
             context,
-            MaterialPageRoute(builder: (context) => const OnBoardingScreen()),
+            MaterialPageRoute(builder: (context) => const Login()),
           );
 
           // Set visited_before flag to true for future visits

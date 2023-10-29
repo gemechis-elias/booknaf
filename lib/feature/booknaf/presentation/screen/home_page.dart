@@ -9,7 +9,7 @@ import '../../../../core/data/posts.dart';
 import '../../../../core/data/my_colors.dart';
 import 'package:flutter_speed_dial/flutter_speed_dial.dart';
 import 'dart:async';
-
+import 'package:share_plus/share_plus.dart';
 import '../widget/new_books.dart';
 import 'search/search_screen.dart';
 
@@ -288,10 +288,10 @@ class _HomePageState extends State<HomePage> {
                                 ),
                               ],
                             ),
-                            child: const Column(
+                            child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: <Widget>[
-                                Align(
+                                const Align(
                                   alignment: Alignment.topRight,
                                   child: Text(
                                     'Sep 20, 2021',
@@ -299,7 +299,7 @@ class _HomePageState extends State<HomePage> {
                                         color: Colors.white, fontSize: 14),
                                   ),
                                 ),
-                                Expanded(
+                                const Expanded(
                                   child: Center(
                                     child: Text(
                                       'Today a reader, \nTomorrow a leader',
@@ -315,16 +315,24 @@ class _HomePageState extends State<HomePage> {
                                 Row(
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: <Widget>[
-                                    Icon(
+                                    const Icon(
                                       Icons.bookmark,
                                       color: Colors.white,
                                       size: 30,
                                     ),
-                                    SizedBox(width: 10),
-                                    Icon(
-                                      Icons.share,
-                                      color: Colors.white,
-                                      size: 30,
+                                    const SizedBox(width: 10),
+                                    GestureDetector(
+                                      onTap: () async {
+                                        // share quote on social media
+                                        await Share.share(
+                                            'Today a reader, Tomorrow a leader',
+                                            subject: 'Booknaf Daily Quote');
+                                      },
+                                      child: const Icon(
+                                        Icons.share,
+                                        color: Colors.white,
+                                        size: 30,
+                                      ),
                                     ),
                                   ],
                                 ),
@@ -412,7 +420,7 @@ class _HomePageState extends State<HomePage> {
                           mainAxisSize: MainAxisSize.min,
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: <Widget>[
-                            Text("Hello, Fares",
+                            Text("Hello",
                                 style: TextStyle(
                                     color: Colors.grey[100],
                                     fontWeight: FontWeight.bold)),

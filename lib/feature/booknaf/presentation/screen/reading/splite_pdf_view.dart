@@ -9,6 +9,8 @@ import 'package:syncfusion_flutter_pdfviewer/pdfviewer.dart';
 import 'package:syncfusion_flutter_pdf/pdf.dart';
 import 'package:flutter/foundation.dart';
 
+import '../notes/ui/pages/note_page.dart';
+
 class SplitScreen extends StatefulWidget {
   final BookModel book;
 
@@ -248,6 +250,12 @@ class _SplitScreenState extends State<SplitScreen> {
                         icon: const Icon(Icons.bookmark, color: Colors.white),
                         onPressed: () {
                           // Handle note action
+                          // navigate to NoteHomePage()
+                          Navigator.pushReplacement(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const NoteHomePage()),
+                          );
                         },
                       ),
                       IconButton(
