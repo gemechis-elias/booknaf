@@ -2,9 +2,11 @@ final dummyData = {
   {
     "id": 1,
     "type": "post_with_images",
-    "content":
-        "Some amazing Landscape photos from My Visit at Oromia Natures. \n#photography #photoshoot #photooftheday #photographer",
-    "images": ["https://drive.google.com/file/d/1JxoVsZj4mLGkRuytrVLopO6QWcc9Krug/view?usp=drive_link", "post_2.jpg", "post_3.jpg"],
+    "content": "I read this amazing Book. I suggest everyone to read.",
+    "images": [
+      "https://m.media-amazon.com/images/I/91+NBrXG-PL._AC_UF1000,1000_QL80_.jpg",
+      "https://m.media-amazon.com/images/I/91+NBrXG-PL._AC_UF1000,1000_QL80_.jpg"
+    ],
     "likes": 95,
     "saves": 5,
     "shares": 3,
@@ -49,58 +51,22 @@ final dummyData = {
       "createdAt": "2023-09-07T09:00:00Z",
       "profile_pic": "avatar_2.png",
     },
-    "place": {
-      "title": "Bale Mountains National Park",
-      "tag": "Nature",
-      "location": "Bale, Ethiopia",
-      "rating": 4.5,
-      "gallery": ["image_3.png", "image_4.png"],
-      "about":
-          "Bale Mountains National Park is a national park of Ethiopia. The park encompasses an area of approximately 2,200 square kilometres in the Bale Mountains and Sanetti Plateau of the Ethiopian Highlands. It was established in 1970 and is the oldest national park in Ethiopia.",
-      "services": ["Wifi", "Hotels"],
-      "reviews": [
-        {
-          "user": {
-            "id": 401,
-            "fullName": "Reviewer 1",
-            "email": "reviewer1@example.com",
-            "password": "hashed_password",
-            "bio": "Reviewer 1 bio.",
-            "createdAt": "2023-09-07T14:00:00Z",
-            "profile_pic": "no_profile.png",
-          },
-          "rating": 5,
-          "comment": "Great place!"
-        },
-        {
-          "user": {
-            "id": 402,
-            "fullName": "Reviewer 2",
-            "email": "reviewer2@example.com",
-            "password": "hashed_password",
-            "bio": "Reviewer 2 bio.",
-            "createdAt": "2023-09-07T15:00:00Z",
-            "profile_pic": "no_profile.png",
-          },
-          "rating": 4,
-          "comment": "Nice place!"
-        },
-      ],
-    },
   },
   {
-    "id": 2,
-    "type": "post_with_text",
-    "content":
-        "Absolutely captivated by the breathtaking beauty of Oromia, Ethiopia 🇪🇹! Nature here is an artwork of its own, from the lush green highlands to the serene lakeshores. The culture is equally enchanting, with warm smiles and vibrant traditions everywhere you turn. #OromiaAdventures #EthiopianBeauty #NatureAndCulture",
-    "images": [],
-    "likes": 95,
+    "id": 1,
+    "type": "post_with_images",
+    "content": "How many of you read this book?",
+    "images": [
+      "https://play-lh.googleusercontent.com/sGlukbXCi1zEzXw4iLS13h5AXAB2ObYDoQjCRMZWZ3_ip_WZ4wD8V__ACg90-d3vQZVQ",
+      "https://ia902906.us.archive.org/33/items/podcast_aesop-ethiopian-radio_fikir-eske-mekabir-tireka-part_1000170219849/podcast_aesop-ethiopian-radio_fikir-eske-mekabir-tireka-part_1000170219849_itemimage.png?cnt=0"
+    ],
+    "likes": 5,
     "saves": 5,
     "shares": 3,
     "comments": [
       {
         "id": 101,
-        "content": "This is Amazing!",
+        "content": "I read it long time ago!",
         "image": "",
         "user": {
           "id": 201,
@@ -112,332 +78,17 @@ final dummyData = {
           "profile_pic": "no_profile.png",
         },
       },
-      {
-        "id": 102,
-        "content": "Very impressive.",
-        "image": null,
-        "user": {
-          "id": 202,
-          "fullName": "Kebede Alem",
-          "email": "user2@example.com",
-          "password": "hashed_password",
-          "bio": "User 2 bio.",
-          "createdAt": "2023-09-07T13:00:00Z",
-          "profile_pic": "no_profile.png",
-        },
-      },
     ],
     "created_at": "2023-09-07T10:00:00Z",
     "updated_at": "2023-09-07T10:30:00Z",
     "user": {
       "id": 301,
-      "fullName": "Betty Belay",
+      "fullName": "Abdisa Alemu",
       "email": "post_author@example.com",
       "password": "hashed_password",
       "bio": "Author's bio.",
       "createdAt": "2023-09-07T09:00:00Z",
-      "profile_pic": "avatar_3.png",
-    },
-    "place": {
-      "title": "Test Place",
-      "tag": "Test Tag",
-      "location": "Test Location",
-      "rating": 4.5,
-      "gallery": ["image_4.png", "image_3.png"],
-      "about": "About the test place.",
-      "services": ["Service 1", "Service 2", "Service 3"],
-      "reviews": [
-        {
-          "user": {
-            "id": 401,
-            "fullName": "Reviewer 1",
-            "email": "reviewer1@example.com",
-            "password": "hashed_password",
-            "bio": "Reviewer 1 bio.",
-            "createdAt": "2023-09-07T14:00:00Z",
-            "profile_pic": "no_profile.png",
-          },
-          "rating": 5,
-          "comment": "Great place!"
-        },
-        {
-          "user": {
-            "id": 402,
-            "fullName": "Reviewer 2",
-            "email": "reviewer2@example.com",
-            "password": "hashed_password",
-            "bio": "Reviewer 2 bio.",
-            "createdAt": "2023-09-07T15:00:00Z",
-            "profile_pic": "no_profile.png",
-          },
-          "rating": 4,
-          "comment": "Nice place!"
-        },
-      ],
+      "profile_pic": "avatar_2.png",
     },
   },
-  {
-    "id": 3,
-    "type": "post_with_place",
-    "content":
-        "Great photo shooting today! I really enjoyed it. I want to thank my friends for making this happen. thank you @visitoromia. \n#photography #photoshoot #photooftheday #photographer",
-    "images": ["Image.png", "Image_2.png"],
-    "likes": 95,
-    "saves": 5,
-    "shares": 3,
-    "comments": [
-      {
-        "id": 101,
-        "content": "This is Amazing!",
-        "image": "",
-        "user": {
-          "id": 201,
-          "fullName": "Abel Abebe",
-          "email": "user1@example.com",
-          "password": "hashed_password",
-          "bio": "User 1 bio.",
-          "createdAt": "2023-09-07T12:00:00Z",
-          "profile_pic": "gech.png",
-        },
-      },
-      {
-        "id": 102,
-        "content": "Very impressive.",
-        "image": null,
-        "user": {
-          "id": 202,
-          "fullName": "Kebede Alem",
-          "email": "user2@example.com",
-          "password": "hashed_password",
-          "bio": "User 2 bio.",
-          "createdAt": "2023-09-07T13:00:00Z",
-          "profile_pic": "no_profile.png",
-        },
-      },
-    ],
-    "created_at": "2023-09-07T10:00:00Z",
-    "updated_at": "2023-09-07T10:30:00Z",
-    "user": {
-      "id": 301,
-      "fullName": "Hilina Hailu",
-      "email": "post_author@example.com",
-      "password": "hashed_password",
-      "bio": "Author's bio.",
-      "createdAt": "2023-09-07T09:00:00Z",
-      "profile_pic": "avatar.png",
-    },
-    "place": {
-      "title": "Lake Chelan 360 View",
-      "tag": "Test Tag",
-      "location": "Test Location",
-      "rating": 4.5,
-      "gallery": ["image_4.png", "image_3.png"],
-      "about": "About the test place.",
-      "services": ["Service 1", "Service 2", "Service 3"],
-      "reviews": [
-        {
-          "user": {
-            "id": 401,
-            "fullName": "Reviewer 1",
-            "email": "reviewer1@example.com",
-            "password": "hashed_password",
-            "bio": "Reviewer 1 bio.",
-            "createdAt": "2023-09-07T14:00:00Z",
-            "profile_pic": "no_profile.png",
-          },
-          "rating": 5,
-          "comment": "Great place!"
-        },
-        {
-          "user": {
-            "id": 402,
-            "fullName": "Reviewer 2",
-            "email": "reviewer2@example.com",
-            "password": "hashed_password",
-            "bio": "Reviewer 2 bio.",
-            "createdAt": "2023-09-07T15:00:00Z",
-            "profile_pic": "no_profile.png",
-          },
-          "rating": 4,
-          "comment": "Nice place!"
-        },
-      ],
-    },
-  },
-  {
-    "id": 4,
-    "type": "post_with_panorama",
-    "content":
-        "Immersed in a 360-degree wonderland! 🌍✨ Can\'t get over this incredible view from my latest adventure. Feeling on top of the world (literally!) #360Views #TravelMagic #Wanderlust 📷😍",
-    "images": ["panorama_1.jpg"],
-    "likes": 95,
-    "saves": 5,
-    "shares": 3,
-    "comments": [
-      {
-        "id": 101,
-        "content": "This is Amazing!",
-        "image": "",
-        "user": {
-          "id": 201,
-          "fullName": "Abel Abebe",
-          "email": "user1@example.com",
-          "password": "hashed_password",
-          "bio": "User 1 bio.",
-          "createdAt": "2023-09-07T12:00:00Z",
-          "profile_pic": "no_profile.png",
-        },
-      },
-      {
-        "id": 102,
-        "content": "Very impressive.",
-        "image": null,
-        "user": {
-          "id": 202,
-          "fullName": "Kebede Alem",
-          "email": "user2@example.com",
-          "password": "hashed_password",
-          "bio": "User 2 bio.",
-          "createdAt": "2023-09-07T13:00:00Z",
-          "profile_pic": "no_profile.png",
-        },
-      },
-    ],
-    "created_at": "2023-09-07T10:00:00Z",
-    "updated_at": "2023-09-07T10:30:00Z",
-    "user": {
-      "id": 301,
-      "fullName": "Getabalew Asfaw",
-      "email": "post_author@example.com",
-      "password": "hashed_password",
-      "bio": "Author's bio.",
-      "createdAt": "2023-09-07T09:00:00Z",
-      "profile_pic": "gech.png",
-    },
-    "place": {
-      "title": "Test Place",
-      "tag": "Test Tag",
-      "location": "Test Location",
-      "rating": 4.5,
-      "gallery": ["image_4.png", "image_3.png"],
-      "about": "About the test place.",
-      "services": ["Service 1", "Service 2", "Service 3"],
-      "reviews": [
-        {
-          "user": {
-            "id": 401,
-            "fullName": "Reviewer 1",
-            "email": "reviewer1@example.com",
-            "password": "hashed_password",
-            "bio": "Reviewer 1 bio.",
-            "createdAt": "2023-09-07T14:00:00Z",
-            "profile_pic": "no_profile.png",
-          },
-          "rating": 5,
-          "comment": "Great place!"
-        },
-        {
-          "user": {
-            "id": 402,
-            "fullName": "Reviewer 2",
-            "email": "reviewer2@example.com",
-            "password": "hashed_password",
-            "bio": "Reviewer 2 bio.",
-            "createdAt": "2023-09-07T15:00:00Z",
-            "profile_pic": "no_profile.png",
-          },
-          "rating": 4,
-          "comment": "Nice place!"
-        },
-      ],
-    },
-  },
-  {
-    "id": 5,
-    "type": "post_with_sponser",
-    "content":
-        "𝗠𝗶𝘀𝘀 𝗶𝘁 𝗻𝗼𝘁 𝗢𝗧𝗪 𝟮𝟬𝟮𝟯\nThe Oromia Tourism Week exhibition is the perfect place to start planning your next trip. Meet with tour operators, hoteliers, and other tourism professionals to learn about all the amazing things Oromia has to offer. See you there from September 24-26, 2023!\nwww.oromiatourismweek.org \n#Oromia #ethiopianflavours #domestictourism #visitethiopia #beautifulplaces #travel #explore #discover #nature #naturephotography",
-    "images": ["post_5.jpg", "post_6.jpg"],
-    "likes": 505,
-    "saves": 5,
-    "shares": 3,
-    "comments": [
-      {
-        "id": 101,
-        "content": "This is Amazing!",
-        "image": "",
-        "user": {
-          "id": 201,
-          "fullName": "Abel Abebe",
-          "email": "user1@example.com",
-          "password": "hashed_password",
-          "bio": "User 1 bio.",
-          "createdAt": "2023-09-07T12:00:00Z",
-          "profile_pic": "no_profile.png",
-        },
-      },
-      {
-        "id": 102,
-        "content": "Very impressive.",
-        "image": null,
-        "user": {
-          "id": 202,
-          "fullName": "Visit Oromia",
-          "email": "user2@example.com",
-          "password": "hashed_password",
-          "bio": "User 2 bio.",
-          "createdAt": "2023-09-07T13:00:00Z",
-          "profile_pic": "no_profile.png",
-        },
-      },
-    ],
-    "created_at": "2023-09-07T10:00:00Z",
-    "updated_at": "2023-09-07T10:30:00Z",
-    "user": {
-      "id": 301,
-      "fullName": "Visit Oromia",
-      "email": "post_author@example.com",
-      "password": "hashed_password",
-      "bio": "Author's bio.",
-      "createdAt": "2023-09-07T09:00:00Z",
-      "profile_pic": "avatar_4.png",
-    },
-    "place": {
-      "title": "Test Place",
-      "tag": "Test Tag",
-      "location": "Test Location",
-      "rating": 4.5,
-      "gallery": ["image_4.png", "image_3.png"],
-      "about": "About the test place.",
-      "services": ["Service 1", "Service 2", "Service 3"],
-      "reviews": [
-        {
-          "user": {
-            "id": 401,
-            "fullName": "Reviewer 1",
-            "email": "reviewer1@example.com",
-            "password": "hashed_password",
-            "bio": "Reviewer 1 bio.",
-            "createdAt": "2023-09-07T14:00:00Z",
-            "profile_pic": "no_profile.png",
-          },
-          "rating": 5,
-          "comment": "Great place!"
-        },
-        {
-          "user": {
-            "id": 402,
-            "fullName": "Reviewer 2",
-            "email": "reviewer2@example.com",
-            "password": "hashed_password",
-            "bio": "Reviewer 2 bio.",
-            "createdAt": "2023-09-07T15:00:00Z",
-            "profile_pic": "no_profile.png",
-          },
-          "rating": 4,
-          "comment": "Nice place!"
-        },
-      ],
-    },
-  }
 };

@@ -48,7 +48,6 @@ dependencies:
   internet_connection_checker: ^1.0.0+1
   intl: ^0.18.0
   meta: ^1.9.1
-  flutter_animated_icons: ^1.0.1
   skeletons: ^0.0.3
   animated_text_kit: ^4.2.2
   image_picker: ^1.0.0
@@ -76,9 +75,19 @@ dependencies:
   firebase_storage: ^11.2.4
   provider: ^6.0.0
   firebase_messaging: ^14.6.1 
+  
+  google_fonts: ^6.1.0
+  sqflite: ^2.3.0
+  flutter_staggered_grid_view: ^0.6.2
+  
+  uuid: ^4.1.0
 
   # state management
   get: ^4.6.6
+  floating_bottom_bar: ^0.0.2
+  syncfusion_flutter_pdfviewer: ^23.1.42
+   
+  split_view: ^3.2.1
 
 
 dev_dependencies:
@@ -90,10 +99,10 @@ dev_dependencies:
 flutter_launcher_icons:
   android: true
   ios: true
-  image_path: "assets/icon/logo.png"
+  image_path: "assets/images/splash_logo.png"
 
 launcher_name:
-  default: "HotSpot"
+  default: "Booknaf"
 
 flutter:
 
@@ -101,14 +110,16 @@ flutter:
   # included with your application, so that you can use the icons in
   # the material Icons class.
   uses-material-design: true
-  
+    # To add assets to your application, add an assets section, like this:
+ 
   assets:
     - assets/images/
-    - assets/icon/
-    - assets/animations/
     - assets/images/no_profile.png
-    - assets/images/Image.png
-    - assets/images/Image_2.png
+    - assets/images/banner_1.png
+
+    - assets/lotties/
+    - assets/lotties/engagment.json
+    - assets/lotties/phone_scrolling.json
 
   fonts:
     - family: Roboto
@@ -129,4 +140,24 @@ flutter:
     - family: MontserratExtraBold
       fonts:
         - asset: assets/fonts/montserrat_extrabold.otf
+
+    - family: Poppins-SemiBold
+      fonts:
+        - asset: assets/fonts/Poppins-SemiBold.ttf
+
+    - family: Urbanist-Italic
+      fonts:
+        - asset: assets/fonts/Urbanist-Italic.ttf
+
+    - family: Urbanist-Bold
+      fonts:
+        - asset: assets/fonts/Urbanist-Bold.ttf
+
+    - family: Urbanist-Regular
+      fonts:
+        - asset: assets/fonts/Urbanist-Regular.ttf
+
+    - family: Urbanist-Light
+      fonts:
+        - asset: assets/fonts/Urbanist-Light.ttf
           
