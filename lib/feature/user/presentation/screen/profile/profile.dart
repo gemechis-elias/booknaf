@@ -13,15 +13,48 @@ class ProfileBlueAppbarRoute extends StatefulWidget {
 }
 
 class ProfileBlueAppbarRouteState extends State<ProfileBlueAppbarRoute> {
+  final List<String> menuItems = [
+    'Inbox',
+    'Activities',
+    'Wishlist',
+    'Notifications',
+    'Theme',
+    'Language',
+    'Account Settings',
+    'Privacy Policy',
+    'Help',
+    'Log Out',
+  ];
+
+  final List<IconData> icons = [
+    Icons.mail,
+    Icons.accessibility,
+    Icons.favorite,
+    Icons.notifications,
+    Icons.color_lens,
+    Icons.language,
+    Icons.account_circle,
+    Icons.security,
+    Icons.help,
+    Icons.exit_to_app,
+  ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
-          backgroundColor: Color(0xFF656AFC),
+          backgroundColor: const Color.fromARGB(255, 255, 255, 255),
           elevation: 0,
-          title: Text("Profile",
-              style: MyText.title(context)!.copyWith(color: Colors.white)),
+          title: const Text(
+            "Profile",
+            style: TextStyle(
+              fontFamily: 'MontserratBold',
+              fontSize: 23,
+              fontWeight: FontWeight.bold,
+              color: Colors.black,
+            ),
+          ),
           // leading: IconButton(
           //   icon: Icon(Icons.arrow_back_ios, color: Colors.white),
           //   onPressed: () {
@@ -30,7 +63,8 @@ class ProfileBlueAppbarRouteState extends State<ProfileBlueAppbarRoute> {
           // ),
           actions: <Widget>[
             IconButton(
-              icon: const Icon(Icons.search, color: Colors.white),
+              icon: const Icon(Icons.search,
+                  color: Color.fromARGB(255, 26, 26, 26)),
               onPressed: () {},
             ),
             PopupMenuButton<String>(
@@ -49,125 +83,50 @@ class ProfileBlueAppbarRouteState extends State<ProfileBlueAppbarRoute> {
             Container(
               width: double.infinity,
               padding: const EdgeInsets.all(20),
-              color: Color(0xFF656AFC),
+              color: const Color.fromARGB(255, 255, 255, 255),
               child: Column(
                 children: <Widget>[
                   CircleAvatar(
                     radius: 52,
-                    backgroundColor: Colors.white,
+                    backgroundColor: const Color.fromARGB(255, 255, 255, 255),
                     child: CircleAvatar(
                       radius: 50,
                       backgroundImage: AssetImage(Img.get("no_profile.png")),
                     ),
                   ),
                   Container(height: 15),
-                  Text("Abebe Kebede",
-                      style:
-                          MyText.title(context)!.copyWith(color: Colors.white)),
-                  Container(height: 5),
-                  Text("Student",
-                      style: MyText.subhead(context)!
-                          .copyWith(color: MyColors.grey_10)),
+                  Text("Fares Belayneh",
+                      style: MyText.title(context)!.copyWith(
+                          color: const Color.fromARGB(255, 29, 29, 29))),
                 ],
               ),
             ),
-            Container(height: 20),
-            Row(
-              children: <Widget>[
-                Expanded(
-                  flex: 1,
-                  child: Column(
-                    children: <Widget>[
-                      Text("0",
-                          style: MyText.title(context)!
-                              .copyWith(color: MyColors.grey_90)),
-                      Container(height: 5),
-                      Text("Posts",
-                          style: MyText.subhead(context)!
-                              .copyWith(color: MyColors.grey_60))
-                    ],
+
+            // Menu
+            ListView.separated(
+              shrinkWrap: true,
+              physics: const NeverScrollableScrollPhysics(),
+              itemCount: menuItems.length,
+              itemBuilder: (context, index) {
+                return ListTile(
+                  leading: Icon(icons[index],
+                      color: const Color.fromARGB(255, 24, 24, 24)),
+                  title: Text(
+                    menuItems[index],
+                    style: MyText.medium(context)!
+                        .copyWith(color: const Color.fromARGB(255, 24, 24, 24)),
                   ),
-                ),
-                Expanded(
-                  flex: 1,
-                  child: Column(
-                    children: <Widget>[
-                      Text("0",
-                          style: MyText.title(context)!
-                              .copyWith(color: MyColors.grey_90)),
-                      Container(height: 5),
-                      Text("Followers",
-                          style: MyText.subhead(context)!
-                              .copyWith(color: MyColors.grey_60))
-                    ],
-                  ),
-                ),
-                Expanded(
-                  flex: 1,
-                  child: Column(
-                    children: <Widget>[
-                      Text("1",
-                          style: MyText.title(context)!
-                              .copyWith(color: MyColors.grey_90)),
-                      Container(height: 5),
-                      Text("Following",
-                          style: MyText.subhead(context)!
-                              .copyWith(color: MyColors.grey_60))
-                    ],
-                  ),
-                ),
-              ],
+                  trailing: const Icon(Icons.arrow_forward_ios,
+                      size: 14, color: Color.fromARGB(255, 24, 24, 24)),
+                  onTap: () {},
+                );
+              },
+              separatorBuilder: (context, index) {
+                return const Divider(
+                  color: Color.fromARGB(255, 238, 238, 238),
+                );
+              },
             ),
-            Container(height: 20),
-            const Divider(height: 0),
-            Container(
-              width: double.infinity,
-              padding: const EdgeInsets.fromLTRB(20, 20, 20, 10),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: <Widget>[
-                  Text("Photos",
-                      style: MyText.medium(context).copyWith(
-                          color: MyColors.grey_90,
-                          fontWeight: FontWeight.bold)),
-                  Container(height: 10),
-                  SingleChildScrollView(
-                    scrollDirection: Axis.horizontal,
-                    child: Row(
-                      children: <Widget>[
-                        // You don't have posts yet text small and centered
-                        Container(
-                          child: Text("You don't have photo yet",
-                              style: MyText.subhead(context)!
-                                  .copyWith(color: MyColors.grey_60)),
-                        )
-                      ],
-                    ),
-                  )
-                ],
-              ),
-            ),
-            Container(
-              width: double.infinity,
-              padding: const EdgeInsets.fromLTRB(20, 10, 20, 10),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: <Widget>[
-                  Text("Saved Post",
-                      style: MyText.medium(context).copyWith(
-                          color: MyColors.grey_90,
-                          fontWeight: FontWeight.bold)),
-                  Container(height: 10),
-                  Row(
-                    children: <Widget>[
-                      Text("You don't have saved post yet",
-                          style: MyText.subhead(context)!
-                              .copyWith(color: MyColors.grey_60))
-                    ],
-                  ),
-                ],
-              ),
-            )
           ],
         ),
       ),

@@ -1,14 +1,12 @@
-import 'dart:async';
-import 'dart:developer';
 import 'package:flutter/services.dart';
 import 'package:salomon_bottom_bar/salomon_bottom_bar.dart';
 import '../../../../core/utils/greeting.dart';
 import 'package:flutter/material.dart';
-import 'package:graphic/graphic.dart' as graphic;
 import '../../../user/presentation/screen/profile/profile.dart';
 import 'home_page.dart';
 import 'package:fluentui_system_icons/fluentui_system_icons.dart';
 
+import 'library/library_home.dart';
 import 'notes/ui/pages/note_page.dart';
 import 'post/post_page.dart';
 
@@ -32,6 +30,7 @@ class _HomeState extends State<Home> {
     const HomePage(),
     const PostPage(),
     const NoteHomePage(),
+    const LibraryPage(),
     const ProfileBlueAppbarRoute(),
   ];
 
@@ -95,6 +94,13 @@ class _HomeState extends State<Home> {
                       Icons.bookmark_outline,
                     ),
                     title: const Text("Notes"),
+                    selectedColor: const Color.fromARGB(255, 21, 45, 87),
+                  ),
+                  SalomonBottomBarItem(
+                    icon: const Icon(
+                      Icons.cloud_download_outlined,
+                    ),
+                    title: const Text("Library"),
                     selectedColor: const Color.fromARGB(255, 21, 45, 87),
                   ),
 

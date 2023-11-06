@@ -72,7 +72,7 @@ class _PostPageState extends State<PostPage> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        "News Feed",
+                        "Wisdom Lounge",
                         style: TextStyle(
                           fontFamily: 'MontserratBold',
                           fontSize: 22,

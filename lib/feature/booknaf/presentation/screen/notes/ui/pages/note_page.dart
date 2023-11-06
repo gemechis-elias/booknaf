@@ -77,7 +77,7 @@ class _NoteHomePageState extends State<NoteHomePage> {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Text(
-            "NOTES",
+            "MY NOTES",
             style: TextStyle(
               fontFamily: 'MontserratBold',
               fontSize: 23,

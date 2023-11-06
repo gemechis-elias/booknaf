@@ -104,7 +104,51 @@ class _PostWithImagesState extends State<PostWithImages>
             ),
             const SizedBox(
               height: 1,
-            )
+            ),
+            const Spacer(),
+            Container(
+              width: 110,
+              height: 40,
+              decoration: BoxDecoration(
+                boxShadow: const [],
+                gradient: const LinearGradient(
+                  begin: Alignment.topCenter,
+                  end: Alignment.bottomCenter,
+                  stops: [0.0, 1.0],
+                  colors: [Color(0xff3A75DD), Color(0xff75A7FF)],
+                ),
+                color: Color(0xff3A75DD),
+                borderRadius: BorderRadius.circular(30),
+              ),
+              child: ElevatedButton(
+                style: ButtonStyle(
+                  shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                    RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(30.0),
+                    ),
+                  ),
+                  backgroundColor:
+                      MaterialStateProperty.all(Colors.transparent),
+                  // elevation: MaterialStateProperty.all(3),
+                  shadowColor: MaterialStateProperty.all(Colors.transparent),
+                ),
+                onPressed: () {},
+                child: const Padding(
+                  padding: EdgeInsets.only(
+                    top: 0,
+                    bottom: 0,
+                  ),
+                  child: Text(
+                    "+ Follow",
+                    style: TextStyle(
+                      fontSize: 14,
+                      // fontWeight: FontWeight.w700,
+                      color: Colors.white,
+                    ),
+                  ),
+                ),
+              ),
+            ),
           ]),
           SizedBox(
             height: 220.0,
